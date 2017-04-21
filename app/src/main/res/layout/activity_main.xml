@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vunt.com.vn.webviewdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/lnlo1">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/ic_arrow_back_black_24dp"
+            android:background="@null"/>
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/ic_arrow_forward_black_24dp"
+            android:background="@null"/>
+        <ImageView
+            android:id="@+id/imgReload"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/ic_refresh_black_24dp"
+            android:background="@null"/>
+        <EditText
+            android:id="@+id/edtURL"
+            android:layout_margin="5dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập URL"
+            android:singleLine="true"/>
+        <Button
+            android:id="@+id/btnTim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Tìm"/>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnlo1"></WebView>
+
+</RelativeLayout>
