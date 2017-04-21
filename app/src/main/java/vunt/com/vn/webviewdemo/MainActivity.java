@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this, "changr", Toast.LENGTH_SHORT).show();
         initViews();
         webView.setWebViewClient(new WebViewClient());//khi click trong trang web sẽ không load ra khỏi app mà vẫn ở trong app
         imgBack.setOnClickListener(this);
